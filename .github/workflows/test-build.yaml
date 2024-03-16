@@ -37,3 +37,13 @@ jobs:
 
       - name: Run format check
         run: npm run format:check
+
+  test:
+    needs: setup
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: ./.github/actions/restore-cache
+
+      - name: Run tests
+        run: npm run test
