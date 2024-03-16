@@ -1,9 +1,9 @@
-import { config } from 'dotenv';
+import { config } from "dotenv";
 
-config({ path: '../../.env' });
+config({ path: "../../.env" });
 
-module.exports = {
-  client: 'pg',
+export default {
+  client: "pg",
   connection: {
     host: process.env.DB_HOST,
     port: +process.env.DB_PORT,
@@ -12,10 +12,10 @@ module.exports = {
     password: process.env.DB_PASSWORD,
   },
   migrations: {
-    tableName: 'migrations',
-    directory: ['./migrations'],
+    tableName: "migrations",
+    directory: ["./migrations"],
   },
   seeds: {
-    directory: ['./seeds'],
+    directory: ["./seeds"],
   },
 };

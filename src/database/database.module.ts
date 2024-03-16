@@ -1,5 +1,5 @@
-import { Module } from '@nestjs/common';
-import { KnexModule } from 'nestjs-knex';
+import { Module } from "@nestjs/common";
+import { KnexModule } from "nestjs-knex";
 
 @Module({
   imports: [
@@ -7,7 +7,7 @@ import { KnexModule } from 'nestjs-knex';
       useFactory: () => {
         return {
           config: {
-            client: 'pg',
+            client: "pg",
             connection: {
               host: process.env.DB_HOST,
               port: process.env.DB_PORT,
