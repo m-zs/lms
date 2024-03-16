@@ -31,5 +31,7 @@ module.exports = {
     "unicorn/no-useless-undefined": "off",
     "unicorn/prevent-abbreviations": "off",
     "unicorn/filename-case": "off",
+    "unicorn/prefer-top-level-await": "off",
+    "no-unused-vars": "off",
   },
 };
